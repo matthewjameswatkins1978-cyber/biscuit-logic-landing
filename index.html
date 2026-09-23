@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101214">
+  <meta name="description" content="Biscuit Logic — an independent creative technology studio.">
+  <title>Biscuit Logic</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%23171b1d%22 stroke=%22%23b8c8cd%22 stroke-width=%224%22/%3E%3Ctext x=%2250%22 y=%2266%22 text-anchor=%22middle%22 font-size=%2252%22%3E%F0%9F%90%87%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --ink:#f0ede6; --muted:#b2b0aa; --line:rgba(231,224,211,.19); --accent:#b8c8cd; }
+    * { box-sizing:border-box; }
+    html, body { min-height:100%; margin:0; }
+    body { min-height:100svh; display:grid; place-items:center; overflow:hidden; padding:clamp(1.25rem,5vw,3rem); color:var(--ink); background:radial-gradient(ellipse at 50% 42%, #20272a 0, #171b1d 35%, #101214 76%); font-family:"DM Sans", sans-serif; -webkit-font-smoothing:antialiased; }
+    main { width:min(100%, 39rem); display:flex; flex-direction:column; align-items:center; text-align:center; }
+    .mark { position:relative; display:grid; place-items:center; width:clamp(9.5rem,25vw,13.5rem); aspect-ratio:1; margin-bottom:clamp(1.8rem,5vh,3rem); }
+    .mark::before { content:""; position:absolute; inset:-12%; border:1px solid rgba(184,200,205,.17); border-radius:50%; }
+    .mark::after { content:""; position:absolute; inset:-22%; border-radius:50%; background:radial-gradient(circle,rgba(142,170,177,.11),transparent 68%); z-index:-1; }
+    .mark svg { width:100%; height:100%; filter:drop-shadow(0 10px 28px rgba(0,0,0,.3)); }
+    h1 { margin:0; font-family:"Playfair Display", Georgia, serif; font-size:clamp(2.8rem,8vw,5.1rem); line-height:1; font-weight:500; letter-spacing:-.055em; }
+    .signature { margin:1.05rem 0 clamp(2rem,5vh,3rem); color:#c8c2b5; font-size:1rem; line-height:1; }
+    .contacts { width:min(100%,31rem); display:flex; align-items:center; justify-content:center; gap:clamp(1.25rem,5vw,2.75rem); padding-top:1.2rem; border-top:1px solid var(--line); }
+    .contact-group { display:flex; align-items:center; max-width:100%; }`n    .contact-group > .contact { overflow-wrap:anywhere; }`n    .contact { min-height:2.75rem; display:inline-flex; align-items:center; gap:.55rem; color:var(--muted); font-size:clamp(.78rem,2.7vw,.94rem); text-decoration:none; transition:color .2s ease; }
+    .contact:hover { color:var(--ink); }
+    .contact:focus-visible, button:focus-visible { outline:2px solid var(--accent); outline-offset:5px; border-radius:2px; }
+    .contact svg { width:1rem; height:1rem; flex:none; color:#aab9bd; }
+    .copy { display:inline-grid; place-items:center; width:2rem; height:2rem; padding:0; border:0; background:transparent; color:#898d8d; cursor:pointer; }
+    .copy:hover { color:var(--ink); }
+    .status { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    @media (max-width:480px) { .contacts { flex-direction:column; gap:.2rem; padding-top:.75rem; } .contact { min-height:2.5rem; } }
+    @media (max-height:600px) { body { overflow:auto; } .mark { width:clamp(7rem,23vh,10rem); margin-bottom:1.25rem; } .signature { margin: .75rem 0 1.25rem; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="title">
+    <div class="mark" aria-hidden="true">
+<svg viewBox="0 0 500 500" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" aria-label="Biscuit Logic Emblem">
+          <!-- Concentric Outer Ring -->
+          <circle cx="250" cy="250" r="236" fill="none" stroke="#68a4e8" stroke-width="16" />
+          <circle cx="250" cy="250" r="218" fill="#070d1d" />
+
+          <!-- Left Brain Hemisphere (The Biscuit with indented craters) -->
+          <g fill="#68a4e8">
+            <path d="
+              M 242 86
+              C 218 84 196 92 182 108
+              C 162 110 146 122 138 138
+              C 118 142 104 158 98 178
+              C 84 186 74 204 74 222
+              C 64 238 67 258 77 274
+              C 74 292 83 310 97 322
+              C 97 338 109 354 125 362
+              C 133 378 151 388 169 392
+              C 184 404 204 410 223 412
+              L 242 412
+              C 246 395 240 375 242 355
+              C 245 330 245 315 242 290
+              C 230 285 220 270 220 250
+              C 220 230 230 215 242 210
+              L 242 86
+              Z" 
+            />
+            <!-- Indentations / Crater perforations -->
+            <circle cx="188" cy="178" r="16.5" fill="#070d1d" />
+            <circle cx="158" cy="258" r="17.5" fill="#070d1d" />
+            <circle cx="193" cy="334" r="15.5" fill="#070d1d" />
+          </g>
+
+          <!-- Right Logical Hemisphere (Deterministic Circuit Branching) -->
+          <!-- Organic outer contour boundary of right hemisphere -->
+          <path d="
+            M 258 86
+            C 280 84 302 92 316 108
+            C 336 110 352 122 360 138
+            C 380 142 394 158 400 178
+            C 414 186 424 204 424 222
+            C 434 238 431 258 421 274
+            C 424 292 415 310 401 322
+            C 401 338 389 354 373 362
+            C 365 378 347 388 329 392
+            C 314 404 294 410 275 412
+            C 264 413 258 408 258 400
+            " 
+            fill="none" 
+            stroke="#68a4e8" 
+            stroke-width="15" 
+            stroke-linecap="round"
+          />
+
+          <!-- Internal Circuit Bus & Nodes -->
+          <path d="M 270 98 L 270 185 L 292 225 L 292 170" fill="none" stroke="#68a4e8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="304" cy="155" r="14.5" fill="#68a4e8" />
+
+          <!-- Center Node & Horizontal Conduit -->
+          <line x1="250" y1="250" x2="315" y2="250" stroke="#68a4e8" stroke-width="14" stroke-linecap="round" />
+          <circle cx="250" cy="250" r="13" fill="#68a4e8" />
+          
+          <!-- Upper Diagonal Branch -->
+          <line x1="315" y1="250" x2="355" y2="215" stroke="#68a4e8" stroke-width="14" stroke-linecap="round" />
+          <circle cx="360" cy="210" r="14.5" fill="#68a4e8" />
+
+          <!-- Lower Diagonal Branch -->
+          <line x1="315" y1="250" x2="360" y2="305" stroke="#68a4e8" stroke-width="14" stroke-linecap="round" />
+          <circle cx="365" cy="312" r="14.5" fill="#68a4e8" />
+
+          <!-- Downward Bus & Termination -->
+          <polyline points="270,260 286,280 286,340" fill="none" stroke="#68a4e8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="286" cy="355" r="14.5" fill="#68a4e8" />
+        </svg>
+    </div>
+    <h1 id="title">Biscuit Logic</h1>
+    <p class="signature" aria-label="A little studio signature">🐇</p>
+    <nav class="contacts" aria-label="Contact and profile">
+      <span class="contact-group">
+        <a class="contact" href="mailto:matthewjameswatkins1978@gmail.com">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          <span>matthewjameswatkins1978@gmail.com</span>
+        </a>
+        <button class="copy" type="button" aria-label="Copy email address" title="Copy email address">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+        </button>
+      </span>
+      <a class="contact" href="https://github.com/matthewjameswatkins1978-cyber" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .71 2.52.51 3.13.39.1-.7.39-1.17.7-1.44-2.48-.28-5.09-1.24-5.09-5.51 0-1.22.44-2.22 1.15-3-.12-.29-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.04-1.15 3.04-1.15.61 1.54.23 2.67.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.28-2.61 5.22-5.1 5.5.4.35.75 1.02.75 2.06v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+        <span>GitHub</span><span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+    <span id="status" class="status" role="status" aria-live="polite"></span>
+  </main>
+  <script>
+    const copyButton = document.querySelector('.copy');
+    const status = document.querySelector('#status');
+    const email = 'matthewjameswatkins1978@gmail.com';
+    copyButton.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          const field = document.createElement('textarea');
+          field.value = email;
+          field.setAttribute('readonly', '');
+          Object.assign(field.style, { position:'fixed', left:'-9999px', top:'0', opacity:'0' });
+          document.body.append(field);
+          field.select();
+          const copied = document.execCommand('copy');
+          field.remove();
+          if (!copied) throw new Error('Copy was not available');
+        }
+        status.textContent = 'Email address copied';
+      } catch {
+        status.textContent = 'Copy unavailable. Select the email address to copy it.';
+      }
+    });
+  </script>
+</body>
+</html>
+
